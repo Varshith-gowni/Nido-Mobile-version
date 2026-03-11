@@ -1,3 +1,11 @@
+body,button,input,textarea {
+
+font-family: 'Patrick Hand', cursive;
+
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
 /* RESET */
 * {
     margin: 0;
@@ -1070,6 +1078,92 @@ h1 {
 .whatsapp-float img{
     width:28px;
     height:28px;
+}
+
+}
+
+/* ================= MOBILE PERFECT FIT ================= */
+
+@media (max-width:768px){
+
+/* Remove desktop left space */
+.container{
+    margin-left:0 !important;
+    padding:15px;
+}
+
+/* Hide sidebar on mobile */
+.sidebar{
+    display:none;
+}
+
+/* Fix top menu */
+.top-menu{
+    padding-left:0;
+    gap:15px;
+}
+
+/* HERO SECTION */
+.hero{
+    flex-direction:column;
+    padding:25px 15px;
+}
+
+/* Hero logo */
+.hero-logo{
+    width:100%;
+    height:auto;
+    max-width:100%;
+}
+
+/* Hero text */
+.hero-text h1{
+    font-size:26px;
+    margin-left:0;
+}
+
+/* Button alignment */
+.cta-btn{
+    margin-left:0;
+    font-size:16px;
+}
+
+/* Hero image */
+.hero-img img{
+    width:100%;
+    max-width:300px;
+}
+
+/* BLOG BLOBS */
+.wrapper{
+    flex-direction:column;
+    align-items:center;
+}
+
+.blob{
+    width:90%;
+}
+
+/* SOCIAL ROW */
+.social-row{
+    flex-direction:column;
+    gap:20px;
+}
+
+/* CRAYON BAR TEXT */
+.crayon-bar{
+    font-size:18px;
+}
+
+/* FOOTER FIX */
+.footer{
+    grid-template-columns:1fr;
+    padding:25px;
+}
+
+/* MAP SIZE */
+.footer-map{
+    height:180px;
 }
 
 }
